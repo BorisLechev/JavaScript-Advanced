@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Show more</title>
+    <script src="extractText.js"></script>
 </head>
 <body>
 <ul id="items">
@@ -13,16 +14,5 @@
 <textarea id="result"></textarea>
 <br>
 <button onclick="extractText()">Extract Text</button>
-<script>
-    function extractText() {
-        let listItems = [];
-        let listedNodes = document.querySelectorAll("ul#items li");
-        let textarea = document.getElementById("result");
-
-        for (let node of listedNodes) {
-            textarea.value += node.textContent + "\n";
-        }
-    }
-</script>
 </body>
 </html>

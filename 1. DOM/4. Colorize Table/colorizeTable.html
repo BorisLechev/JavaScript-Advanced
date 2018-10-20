@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Colorize Table</title>
+    <script src="colorize.js"></script>
 </head>
 <body>
 <table border="1">
@@ -28,15 +29,5 @@
     </tr>
 </table>
 <button onclick="colorize()">Colorize</button>
-
-<script>
-    function colorize() {
-        let tableRows = document.querySelectorAll("table tr");
-
-        for (let i = 1; i < tableRows.length; i += 2) {
-            tableRows[i].style.backgroundColor = "teal";
-        }
-    }
-</script>
 </body>
 </html>
