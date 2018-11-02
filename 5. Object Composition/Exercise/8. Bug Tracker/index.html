@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bug Tracker</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="bugTracker.js"></script>
+</head>
+<body>
+<div id="report_${ID}" class="report">
+    <div class="body">
+        <p>${description}</p>
+    </div>
+    <div class="title">
+        <span class="author">Submitted by: ${author}</span>
+        <span class="status">${status} | ${severity}</span>
+    </div>
+</div>
+</body>
+</html>
