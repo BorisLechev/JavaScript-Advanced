@@ -7,8 +7,8 @@ function makeReservation(containerId) {
 
     if ($("#fullName") && $("#email")) {
         $("#submit").on("click", (event) => {
-            // event.preventDefault();
-            // event.stopPropagation();
+            event.preventDefault();
+            event.stopPropagation();
 
             $("#infoPreview")
                 .append(`<li>Name: ${fullName.val()}</li>`)
@@ -24,8 +24,8 @@ function makeReservation(containerId) {
         });
 
         $("#edit").on("click", (event) => {
-            // event.preventDefault();
-            // event.stopPropagation();
+            event.preventDefault();
+            event.stopPropagation();
 
             let li = $("li");
 
@@ -42,8 +42,8 @@ function makeReservation(containerId) {
         });
 
         $("#continue").on("click", (event) => {
-            // event.preventDefault();
-            // event.stopPropagation();
+            event.preventDefault();
+            event.stopPropagation();
 
             $("#container")
                 .append(`<h2>Payment details</h2>`)
@@ -76,8 +76,8 @@ function makeReservation(containerId) {
                     .append($(`<button id="checkOut">Check Out</button>`));
 
                 $("#checkOut").on("click", (event) => {
-                    // event.preventDefault();
-                    // event.stopPropagation();
+                    event.preventDefault();
+                    event.stopPropagation();
 
                     $('#wrapper').empty();
                     $('#wrapper').append($(`<h4>Thank you for your reservation!</h4>`));
